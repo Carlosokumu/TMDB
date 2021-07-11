@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    app:cardBackgroundColor="?cardColor"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:layout_height="200dp">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_add"
+        android:id="@+id/imageSelected"
+        android:layout_height="100dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="AM DONE"
+        android:layout_gravity="end|center"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/movie_name"
+        android:layout_height="wrap_content"/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:rating="3.5"
+        android:background="#7eb6ff"
+        android:clickable="false"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="end|bottom"
+        android:layout_height="50dp"/>
+    <ImageButton
+        android:layout_width="50dp"
+        android:id="@+id/imageRemove"
+        android:src="@drawable/ic_cancel"
+        android:background="?cardColor"
+        android:layout_gravity="end|top"
+        android:layout_height="50dp"/>
+</androidx.cardview.widget.CardView>

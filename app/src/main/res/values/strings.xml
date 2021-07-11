@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Animation</string>
+    <string name="sign_in">Sign in with google</string>
+    <string name="welcome">Welcome</string>
+    <string name="action_profile">profile</string>
+    <string name="action_settings">settings</string>
+    <string name="empty">You have not added any favourite movies yet!</string>
+    <string name="network">Please Check your internet connection</string>
+    <string name="theme">Theme</string>
+    <string name="ui">Customize your theme</string>
+</resources>

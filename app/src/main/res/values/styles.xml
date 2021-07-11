@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+<!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/white</item>
+         <item name="appBarLayoutStyle">@color/white</item>
+         <item name="android:textColor">@color/black</item>
+         <item name="cardColor">@color/white</item>
+        <item name="colorAccent">#f64c73</item>
+      </style>
+        <style name="AppTheme.Dark" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/card_Color</item>
+        <item name="appBarLayoutStyle">@color/card_Color</item>
+        <item name="cardColor">@color/card_Color</item>
+        <item name="android:windowBackground">@color/card_Color</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorPrimaryDark">@color/card_Color</item>
+        <item name="colorAccent">#f64c73</item>
+        </style>
+
+
+    <style name="welcome_style">
+        <item name="font">@font/rye</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="app_bar">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <color name="darkboom">#070703</color>
+</resources>

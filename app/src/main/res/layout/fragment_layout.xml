@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?cardColor"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/emptyView"
+        android:foregroundGravity="top"
+        android:background="?cardColor"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_height="400dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            android:src="@drawable/empty"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/rye"
+            android:textSize="20sp"
+            android:layout_marginBottom="70dp"
+            android:text="@string/empty"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/add"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_add"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/movie_Items"
+        android:layout_width="match_parent"
+        android:background="?cardColor"
+        tools:visibility="visible"
+        tools:listitem="@layout/row_movie"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

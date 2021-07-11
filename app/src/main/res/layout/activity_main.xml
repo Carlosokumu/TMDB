@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/recycler_view"
+            android:background="?cardColor"
+            android:layout_marginTop="120dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="450dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="#616161"
+        android:id="@+id/bottom_nav"
+        android:saveEnabled="false"
+        android:layout_height="wrap_content"
+        app:labelVisibilityMode="labeled"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu" />
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+
+        android:id="@+id/progressBar"
+        android:layout_width="90dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="150dp"
+        android:layout_height="50dp"
+        android:indeterminate="true"
+        app:mpb_progressStyle="circular"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal" />
+
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/movies_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="?cardColor"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="18dp"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    android:padding="16dp"
+    app:cardUseCompatPadding="false">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/movie_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_height="100dp"
+            android:src="@drawable/one"
+            android:layout_gravity="center"
+            android:layout_width="100dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/alex_brush"
+            android:layout_below="@+id/movie_image"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:background="?cardColor"
+            android:id="@+id/more"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more"
+            android:layout_marginLeft="270dp"
+            android:textColor="@color/colorGreyLight"/>
+        <TextView
+           android:id="@+id/description"
+           android:layout_width="match_parent"
+            android:text="@string/action_settings"
+            android:layout_below="@+id/title"
+           android:layout_height="wrap_content"
+          android:textColor="@color/colorGreyLight"/>
+    <ImageView
+        android:id="@+id/rating_image"
+        android:layout_width="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="270dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/star"
+        app:tint="@color/colorAccent" />
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:text="5.0" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/date"
+        android:background="@drawable/bg_edit"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="100dp"
+        android:text="ADD TO FAVOURITE"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

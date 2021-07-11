@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/material_on_primary_emphasis_medium"/>
+    <gradient android:startColor="@color/colorWhite" android:endColor="@color/colorWhite"/>
+    <stroke android:color="@color/black"/>
+    <corners android:radius="10dp"/>
+</shape>
