@@ -74,7 +74,7 @@
         android:background="@drawable/bg_edit"
         android:layout_below="@+id/description"
         android:layout_marginLeft="100dp"
-        android:text="ADD TO FAVOURITE"
+        android:text="1957-04-10"
         android:layout_height="wrap_content"/>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

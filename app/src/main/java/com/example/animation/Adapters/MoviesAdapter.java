@@ -51,7 +51,6 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
     public void onBindViewHolder(@NonNull MovieViewHolder holder, int position) {
         String image_url = Base.IMAGE_URL_BASE_PATH + movies.get(position).getPosterPath();
         MoviesDialog moviesDialog=new MoviesDialog();
-        //Picasso.with(context).load(image_url).placeholder(R.drawable.progress_animation).error(R.drawable.progress_animation).into(holder.movieImage);
         Glide.with(context).load(image_url).placeholder(R.drawable.progress_animation).into(holder.movieImage);
         holder.movieTitle.setText(movies.get(position).getTitle());
         holder.data.setText(movies.get(position).getReleaseDate());
@@ -81,10 +80,10 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
         ImageButton imageMore;
         TextView movieDescription;
         TextView rating;
-        ImageView movieImage,imgLike;
+        ImageView movieImage;
+
         public MovieViewHolder(@NonNull View v) {
             super(v);
-//            moviesLayout = (LinearLayout) v.findViewById(R.id.movies_layout);
             movieImage = v.findViewById(R.id.movie_image);
             movieTitle = v.findViewById(R.id.title);
             data = v.findViewById(R.id.date);

@@ -65,7 +65,6 @@ public class MainActivity extends ThemeClass implements BottomNavigationView.OnN
     Context context;
     User user;
     InternetAvailabilityChecker mInternetAvailabilityChecker;
-    private static final int SIGN_IN = 1;
     private final static String API_KEY = "c1b2a1c6bf4e3fd350bf40c3da4be1d3";
     private static final String BASE_URL="http://api.themoviedb.org/3/";
     MaterialProgressBar materialProgressBar;

@@ -27,9 +27,5 @@
         <item name="android:foreground">?selectableItemBackground</item>
         <item name="android:textSize">30sp</item>
     </style>
-    <style name="app_bar">
-        <item name="android:background">@color/white</item>
-    </style>
 
-    <color name="darkboom">#070703</color>
 </resources>
